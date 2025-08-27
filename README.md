@@ -52,7 +52,7 @@ These forecasts demonstrate how the model adapts to diverse climatic profiles ac
 ## 📦 Download Trained Model
 
 🔗 You can download the trained model weights here:  
-👉 [modelo_final.pth (Google Drive)](https://drive.google.com/file/d/1ziS0eqpvQCVH8lnDZmApKUwZIavyKQaa/view?usp=sharing)
+👉 [modelo_final.pth (Google Drive)]([https://drive.google.com/file/d/1ziS0eqpvQCVH8lnDZmApKUwZIavyKQaa/view?usp=sharing](https://drive.google.com/file/d/1ziS0eqpvQCVH8lnDZmApKUwZIavyKQaa/view?usp=sharing))
 
 > This file is hosted externally to comply with GitHub storage guidelines.
 
