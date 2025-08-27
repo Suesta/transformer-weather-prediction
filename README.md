@@ -56,11 +56,5 @@ These forecasts demonstrate how the model adapts to diverse climatic profiles ac
 
 > This file is hosted externally to comply with GitHub storage guidelines.
 
-## 🔒 Repository Status
-
-This repository is currently **private** for academic purposes. It will be made public upon institutional approval.  
-For access or collaboration inquiries, please contact the author directly.
-
----
 
 © Víctor Suesta — 2025
