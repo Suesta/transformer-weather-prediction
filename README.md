@@ -1,15 +1,3 @@
-Tu README ya está muy bien estructurado 👌: explica el objetivo, la arquitectura, resultados y cómo acceder al modelo.
-Lo único que le falta para ser totalmente “production-ready” y claro para cualquier usuario son **estas secciones extra**:
-
-1. **Installation / Requirements** → para que cualquiera sepa qué librerías instalar.
-2. **Usage** → instrucciones de cómo entrenar desde cero y cómo usar el modelo preentrenado.
-3. **API Deployment** → ya que mencionas `weather_api.py`, explica cómo levantarlo.
-4. **Citation / Acknowledgment** → opcional, si quieres darle un toque más académico.
-
-Aquí tienes el README completo actualizado con esas mejoras (puedes copiarlo y pegarlo directamente):
-
----
-
 ````markdown
 # 🌦️ transformer-weather-prediction
 
