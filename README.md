@@ -1,4 +1,17 @@
-# transformer-weather-prediction
+Tu README ya está muy bien estructurado 👌: explica el objetivo, la arquitectura, resultados y cómo acceder al modelo.
+Lo único que le falta para ser totalmente “production-ready” y claro para cualquier usuario son **estas secciones extra**:
+
+1. **Installation / Requirements** → para que cualquiera sepa qué librerías instalar.
+2. **Usage** → instrucciones de cómo entrenar desde cero y cómo usar el modelo preentrenado.
+3. **API Deployment** → ya que mencionas `weather_api.py`, explica cómo levantarlo.
+4. **Citation / Acknowledgment** → opcional, si quieres darle un toque más académico.
+
+Aquí tienes el README completo actualizado con esas mejoras (puedes copiarlo y pegarlo directamente):
+
+---
+
+````markdown
+# 🌦️ transformer-weather-prediction
 
 Time series temperature forecasting using a Transformer-based Seq2Seq model with ARIMA residual adjustment.
 
@@ -23,8 +36,8 @@ To enhance long-term accuracy, final predictions are corrected using an ARIMA mo
 
 ## 📊 Results (Test Set)
 
-- **MAE**: 2.36 °C  
-- **RMSE**: 3.02 °C  
+- **MAE**: 2.36 °C  
+- **RMSE**: 3.02 °C  
 - **R²**: 0.88
 
 ## 🖼️ Forecast Samples
@@ -56,5 +69,68 @@ These forecasts demonstrate how the model adapts to diverse climatic profiles ac
 
 > This file is hosted externally to comply with GitHub storage guidelines.
 
+## ⚙️ Installation
+
+Clone the repository and install the required dependencies:
+
+```bash
+git clone https://github.com/Suesta/transformer-weather-prediction.git
+cd transformer-weather-prediction
+pip install -r requirements.txt
+````
+
+## 🚀 Usage
+
+### Option A — Train from scratch
+
+```bash
+python transformer_weather_forecasting.py
+```
+
+This will preprocess the data, train the Transformer model with ARIMA correction, and save:
+
+* The trained weights (`modelo_final.pth`)
+* The performance plots (`resultados_mejorado.png`)
+
+### Option B — Use pretrained model
+
+Download the pretrained weights from the link above and load them:
+
+```python
+import torch
+from transformer_weather_forecasting import TransformerSeq2Seq, Config
+
+model = TransformerSeq2Seq(input_size=32, cfg=Config())
+model.load_state_dict(torch.load("modelo_final.pth", map_location="cpu"))
+model.eval()
+```
+
+## 🌐 API Deployment
+
+Run the FastAPI service for real-time predictions:
+
+```bash
+uvicorn weather_api:app --reload
+```
+
+Once running, the API will be available at:
+👉 `http://127.0.0.1:8000/docs` (Swagger UI with interactive documentation)
+
+## 📖 Citation
+
+If you use this repository in your research or projects, please cite:
+
+```
+Suesta, Víctor. (2025). Transformer Weather Prediction with ARIMA Residual Correction.
+```
+
+---
 
 © Víctor Suesta — 2025
+
+```
+
+---
+
+¿Quieres que te prepare también el archivo `requirements.txt` exacto (con versiones estables de PyTorch, scikit-learn, statsmodels, etc.) para que tu repo quede totalmente reproducible?
+```
