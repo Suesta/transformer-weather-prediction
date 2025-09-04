@@ -113,6 +113,10 @@ Suesta, Víctor. (2025). Transformer Weather Prediction with ARIMA Residual Corr
 
 ---
 
+## 🔗 Author
+Víctor Suesta  
+[LinkedIn](https://www.linkedin.com/in/víctor-suesta-arribas-7b1250322/)
+
 © Víctor Suesta — 2025
 
 ```
