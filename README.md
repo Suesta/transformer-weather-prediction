@@ -120,8 +120,3 @@ Víctor Suesta
 © Víctor Suesta — 2025
 
 ```
-
----
-
-¿Quieres que te prepare también el archivo `requirements.txt` exacto (con versiones estables de PyTorch, scikit-learn, statsmodels, etc.) para que tu repo quede totalmente reproducible?
-```
